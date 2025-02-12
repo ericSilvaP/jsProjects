@@ -1,0 +1,14 @@
+div#conteiner {
+    width: 500px;
+    height: 500px;
+    background-color: yellow;
+    position: relative;
+    justify-content: center;
+}
+
+div#anim {
+    width: 70px;
+    height: 70px;
+    background-color: red;
+    position: absolute;
+}

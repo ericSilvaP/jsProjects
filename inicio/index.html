@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title1">Título maneiro</h1>
+    <p id="text">Olha so que legal esse texto</p>
+    <p id="quadrado"></p>
+    <button id="button1">Butao legal</button>
+</body>
+
+<script>
+    quad = document.getElementById("quadrado")
+    but = document.getElementById("button1")
+
+    function changeColor() {
+        quad.style.backgroundColor = "green"
+    }
+
+    function changeColor2() {
+        quad.style.backgroundColor = "blue"
+    }
+
+    function changeText() {
+        txt = document.getElementById("text")
+        txt.innerHTML = "Joao"
+    }
+
+    quad.addEventListener("mouseover", changeColor)
+    quad.addEventListener("mouseover", changeColor)
+    button1.addEventListener("click", changeText)
+
+   
+</script>
+</html>
