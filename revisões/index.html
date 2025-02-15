@@ -3,22 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
     <title>Revisões</title>
 </head>
 <body>
     <main>
         <h1>Nossas Reviews</h1>
         <section>
-            <div class="person Pimg"><img src="" alt=""></div>
-            <h2 class="person Pname"></h2>
-            <h2 class="person Pjob"></h2>
-            <p class="person Pdescription"></p>
-            <div id="bttContainer">
-                <button class="btt back"> < </button>
-                <button class="btt next"> > </button>
+            <div class="person Pimg">
+                <div id="back"></div>
+                <img src="https://imgs.search.brave.com/0d6jYmejVxO-EpcAEztTzX_gUnn2sOKi75CJX3vcg-s/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtZ3JhdGlz/L2ZvdG8tZGUtYm9u/aXRhby1iYXJiYS1w/b3ItZmF6ZXItcGFy/ZWNlLWNvbS1leHBy/ZXNzYW8tYWdyYWRh/dmVsLWRpcmV0YW1l/bnRlLW5hLWNhbWVy/YV8xNzY1MzItODE2/NC5qcGc_c2VtdD1h/aXNfaHlicmlk" alt="">
+                <div id="comma" class="material-symbols-outlined">"</div>
             </div>
-            <button id="btt random">Me surpreenda</button>
+            <h2 class="person Pname">Eric</h2>
+            <h2 class="person Pjob">Programador</h2>
+            <p class="person Pdescription">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, pariatur, earum quod cum nemo assumenda ad quam voluptates aspernatur reiciendis qui sunt debitis similique architecto impedit voluptate sit maxime consequuntur.</p>
+            <div id="bttContainer">
+                <button class="btt back"> <span class="material-symbols-outlined">
+                    arrow_back_ios
+                    </span> </button>
+                <button class="btt next"> <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                    </span> </button>
+            </div>
+            <button class="btt random">Me surpreenda</button>
         </section>
     </main>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+:root {
+    --cor-principal: cadetblue;
+    --cor-secundaria: lightskyblue;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: var(--cor-principal);
+}
+
+/* containers */
+main {
+    height: 100vh;
+    flex-flow: column;
+}
+
+section {
+    flex-flow: column;
+    width: 80vw;
+    padding: 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px -1px 1px;
+    margin: 20px 0;
+}
+
+#bttContainer, main, section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bttContainer {
+    padding: 10px;
+}
+
+/* imagem */
+.Pimg {
+    position: relative;
+}
+
+#back {
+    position: absolute;
+    background-color: var(--cor-principal);
+    transform: translate(5px, -5px);
+}
+
+#comma {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    transform: translate(-5px, -5px);
+    background-color: var(--cor-principal);
+    border-radius: 15px;
+    text-align: center;
+}
+
+img {
+    position: absolute;
+}
+
+.Pimg, img, #back {
+    height: 75px;
+    width: 75px;
+    border-radius: 40px;
+}
+
+/* textos */
+h1 {
+    letter-spacing: 3px;
+
+}
+
+.Pname {
+    letter-spacing: 5px;
+    margin: 8px;
+}
+
+.Pjob {
+    font-weight: lighter;
+    font-size: 12pt;
+    color: var(--cor-secundaria);
+}
+
+p, h2 {
+    text-align: center;
+}
+
+p {
+    margin: 20px 0;
+}
+
+/* botões */
+button {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: var(--cor-secundaria);
+    margin: 0 10px;
+}
+
+.next:hover, .back:hover {
+    color: bisque;
+    transition: 300ms;
+    transform: translate(1px,1px);
+    cursor: pointer;
+}
+
+.random {
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+    padding: 4px;
+    background-color: azure;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.349);
+}
+
+.random:hover {
+    color: bisque;
+    border-color: bisque;
+    transition: 300ms;
+    cursor: pointer;
+}
