@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root {
-    --cor-principal: cadetblue;
-    --cor-secundaria: lightskyblue;
+    --cor-principal: rgb(73, 166, 234);
+    --cor-secundaria: rgb(73, 166, 234);
 }
 
 * {
@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: var(--cor-principal);
+    background-color: rgb(241, 245, 248);
 }
 
 /* containers */
@@ -27,7 +27,7 @@ section {
     padding: 30px;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 1px -1px 1px;
+    box-shadow: 1px -1px 2px rgba(0, 0, 0, 0.384);
     margin: 20px 0;
 }
 
@@ -69,9 +69,9 @@ img {
 }
 
 .Pimg, img, #back {
-    height: 75px;
-    width: 75px;
-    border-radius: 40px;
+    height: 150px;
+    width: 150px;
+    border-radius: 75px;
 }
 
 /* textos */
@@ -86,6 +86,8 @@ h1 {
 }
 
 .Pjob {
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
     font-weight: lighter;
     font-size: 12pt;
     color: var(--cor-secundaria);
@@ -123,8 +125,8 @@ button {
 }
 
 .random:hover {
-    color: bisque;
-    border-color: bisque;
+    color: rgb(209, 188, 162);
+    border-color: rgb(209, 188, 162);
     transition: 300ms;
     cursor: pointer;
 }
