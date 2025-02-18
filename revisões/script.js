@@ -24,11 +24,10 @@ const persons = [
     }
 ];
 
-let actualP = 0, randomN;
-
 document.addEventListener("DOMContentLoaded", () => updatePerson(0))
 
 buttons.forEach(element => {
+    let actualP = 0, randomN;
     element.addEventListener("click", (e) => {
         const styles = e.currentTarget.classList;
         if (styles.contains("back")) {

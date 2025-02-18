@@ -131,3 +131,8 @@ button {
     transition: 300ms;
     cursor: pointer;
 }
+
+.fade-out {
+    transform: translateX(-100px);
+    transition: 300ms;
+}

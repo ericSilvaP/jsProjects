@@ -1,0 +1,28 @@
+@media (max-width: 768px) {
+    #menu-icon {
+        display: block;
+        text-align: right;
+        font-weight: bold;
+        color: var(--cor-principal);
+        cursor: pointer;
+        background-color: rgba(0,0,0,0);
+        border: none;
+    }
+
+    nav {
+        display: none;
+        width: 100vh;
+        margin-top: 40px;
+    }
+
+    a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    a:hover {
+        transition: 500ms ease-in-out;
+        background-color: rgb(247, 246, 246);
+    }
+
+}
