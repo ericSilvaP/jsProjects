@@ -1,0 +1,75 @@
+@media (max-width: 768px) {
+    /* transições em css são feitas com base em:
+    propriedade afetada - somente numéricas podem sofrer transições. Display, por exemplo, só possui none, block, etc., por isso não é afetada
+    tempo da animação - geralmente obrigatória. Medida em segundou ou milisssegundos
+    atraso - quanto tempo a transição demorará para iniciar. Geralmente omitida
+    aceleração da animação - é a forma como a transição ocorrerá. Olhar propriedades do f12 do site
+    
+    Em transições é importante que a propriedade alterada tenha valores explícitos ANTES e DEPOIS de algum evento (click de um botão) para que ela seja completa*/
+
+    #menu-icon {
+        display: block;
+        text-align: right;
+        color: var(--cor-principal);
+        font-weight: bold;
+        cursor: pointer;
+        background-color: rgba(0,0,0,0);
+        text-shadow: 0px 0px 0 rgba(0, 0, 0, 0.322);
+        border: none;
+        transition: color 300ms, transform 1s;
+    }
+
+    #menu-icon:hover {
+        transition: color 300ms, transform .3s;
+        color: black;
+        transform: translate(-1px, -1px);
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        height: 0;
+        width: 100vh;
+        transition: height 0.3s ease-in-out;
+    }
+
+    a {
+        visibility: hidden;
+        width: 300px;
+        opacity: 0;
+        padding: 10px 0;
+        background: white;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    a:hover {
+        background-color: rgb(247, 246, 246);
+        transition: 400ms ease;
+    }
+
+    /* checkbox/menu */
+
+
+    /* 
+    Os sinais + e ~ são seletores, assim como >. Eles servem para selecionar tags irmãs, ou seja, tags que estão encapsuladas dentro da mesma tag que a sua. Eis as diferenças entre elas (+ e ~)
+    + - Seleciona somente a tag imediamente a sua frente
+    ~ - seleciona todas as tags a sua frente 
+    */
+
+    input:checked ~ nav {
+        height: 200px;
+        transition: height 0.3s ease-in-out;
+    }
+
+    input:checked ~ nav > a {
+        visibility: visible;
+        transition: opacity 0.2s ease-in-out 0.3s;
+        opacity: 1;
+    }
+
+    input:checked ~ label > #menu-icon {
+        transform: rotate(90deg);
+    }
+}
