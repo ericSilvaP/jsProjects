@@ -47,11 +47,28 @@ strong {
 
 a {
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 8px;
     letter-spacing: 3px;
     cursor: pointer;
 }
 
 #menu-icon {
     display: none;
+}
+
+/* redes sociais */
+#icons {
+    display: block;
+}
+
+a.mediaIcons {
+    display: inline;
+    max-width: 100px;
+}
+
+a.mediaIcons > img {
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
 }

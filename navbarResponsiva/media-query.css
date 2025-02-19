@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 835px) {
     #menu-icon {
         display: block;
         text-align: right;
@@ -11,8 +11,12 @@
 
     nav {
         display: none;
-        width: 100vh;
+        width: 100vw;
         margin-top: 40px;
+    }
+
+    #icons {
+        display: none;
     }
 
     a {
