@@ -65,22 +65,24 @@ button#close {
 }
 
 #menuBt {
-    height: 2px;
+    position: absolute;
+    top: 50%;
+    height: 3px;
     width: 20px;
     display: block;
-    background-color: black;
+    background-color: var(--cor-secundaria);
 }
 
 #menuBt::before, #menuBt::after {
     content: "";
-    background-color: black;
+    background-color: var(--cor-secundaria);
     width: 100%;
     height: 100%;
     display: block;
 }
 
 #menuBt::before {
-    transform: translateY(-7px);
+    transform: translateY(-8px);
 }
 
 #menuBt::after {
