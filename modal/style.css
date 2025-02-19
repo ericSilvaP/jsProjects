@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-image: url("https://imgs.search.brave.com/fJnCu3pyfebdCfdy1_KZK4LBuzlMikoMCmeayj_a2pA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/Zm90b3MtZ3JhdGlz/L3BhaXNhZ2VtLWEt/bm9pdGVfMTE5Mjcy/LTI2LmpwZz9zZW10/PWFpc19oeWJyaWQ");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    height: 200px;
+    width: 300px;
+    background-color: white;
+}
+
+#modal {
+    display: none;
+}
