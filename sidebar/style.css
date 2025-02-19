@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+:root {
+    --cor-principal: rgb(73, 166, 234);
+    --cor-secundaria: rgb(73, 166, 234);
+    --cor-terciaria: rgb(241, 247, 253);
+}
+
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* containers */
+body {
+    background-color: var(--cor-terciaria);
+}
+
+#container {
+    position: fixed;
+    height: 20px;
+    width: 20px;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+}
+
+#sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    background-color: white;
+    position: 
+    fixed;
+    width: 400px;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.425);
+}
+
+#options {
+    width: 100%;
+}
+
+#closeButton {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+}
+
+/* buttons */
+
+button#close {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    color: red;
+    font-size: 14pt;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#menuBt {
+    height: 2px;
+    width: 20px;
+    display: block;
+    background-color: black;
+}
+
+#menuBt::before, #menuBt::after {
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#menuBt::before {
+    transform: translateY(-7px);
+}
+
+#menuBt::after {
+    transform: translateY(5px);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 10px 0;
+}
+
+/* text */
+h2 {
+    margin-bottom:50px;
+}
+
+strong {
+    color: var(--cor-secundaria);
+}
