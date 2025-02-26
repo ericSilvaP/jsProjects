@@ -26,10 +26,20 @@ buttons.forEach(element => {
     })
 })
 
-window.addEventListener("scroll", () => {
-    if (Math.abs(header.getBoundingClientRect().top) >= header.getBoundingClientRect().height) {
-        header.classList.add("header-roll");
-    } else {
-        header.classList.toggle("header-roll");
+// feito pelo chatGPT. Não consegui implementar sozinho. tava todo bugado :/
+document.addEventListener("DOMContentLoaded", function () {
+    const header = document.querySelector("header");
+    const navItems = document.querySelectorAll("#menu li");
+
+    function handleScroll() {
+        if (window.scrollY > 50) { // Quando a rolagem passar de 50px
+            header.classList.add("header-roll");
+            navItems.forEach(item => item.classList.add("btt-roll"));
+        } else {
+            header.classList.remove("header-roll");
+            navItems.forEach(item => item.classList.remove("btt-roll"));
+        }
     }
-})
+
+    window.addEventListener("scroll", handleScroll);
+});
